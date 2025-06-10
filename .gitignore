@@ -1,0 +1,15 @@
+# 🧠 Vector memory store (ChromaDB)
+nullcypher_memory_store/
+*.sqlite
+*.bin
+
+# 🔁 Python artifacts
+__pycache__/
+*.pyc
+
+# 🛠 VSCode settings
+.vscode/
+
+# 🧪 Environments
+venv/
+.env
