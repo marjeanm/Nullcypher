@@ -58,7 +58,7 @@ This is a personal project. No public contributions at this time. NullCypher is 
 
 **Marjean Mayo-Baker**  
 [LinkedIn](https://www.linkedin.com/in/marjean-mayo-baker)  
-Project managed and documented in [Notion](https://www.notion.so)  
+Project managed and documented in Notion
 (Private repo for full logs)
 
 ---
