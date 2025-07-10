@@ -1,36 +1,41 @@
-from pathlib import Path
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
+from core.persona import NullCypherPersona
+
 
 def run_nullcypher_chat():
     # 🤖 Load the LLM
-    llm = Ollama(model="mistral")
+    llm = OllamaLLM(model="mistral")
 
-    # 🔮 Load NullCypher’s soul (her blueprint)
-    project_root = Path(__file__).resolve().parent.parent
-    prompt_path = project_root / "nullcypher_prompt.txt"
+    # 🧠 Load NullCypher’s personality and tone
+    persona = NullCypherPersona()
+    llm = OllamaLLM(model="mistral")
+    persona = NullCypherPersona()
 
-    try:
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            persona_intro = f.read()
-    except FileNotFoundError:
-        print(f"❌ Missing system prompt: {prompt_path}")
-        print("🛑 NullCypher refuses to run without her core identity.")
-        exit(1)
+    # 🧠 DEBUG: Confirm persona object has the council attribute
+    print("DEBUG: Persona loaded. Has council?", hasattr(persona, "inner_council"))
 
-    # 🧬 Confirm identity loaded
-    print("🧬 NullCypher’s core identity successfully loaded.")
-    print("🧠 NullCypher is online. Type your question or 'exit' to quit.\n")
-    print("🗨️  NullCypher: \"I’m present. Don’t waste it.\"")
+    council_intro = persona.get_council_summary()
+    base_prompt = f"{persona.speak_identity()}\n\n🧠 Council Roster:\n{council_intro}"
 
-    # 🔁 Direct loop — inject soul every time
+    # ✅ Print council summary
+    print("💡 Council Summary:\n")
+    print(persona.get_council_summary())
+
+    # 🧬 Confirm Council logic loaded
+    print("💡 Council Summary:\n")
+    print(persona.get_council_summary())
+
+    print("\n🧠 NullCypher is online. Type your question or 'exit' to quit.")
+    print('🗨️  NullCypher: "I’m present. Don’t waste it."')
+
+    # 🔁 Live prompt-response loop
     while True:
         user_input = input("\n👤 You: ")
         if user_input.strip().lower() in ["exit", "quit"]:
             print("💤 NullCypher signing off. Stay armored.")
             break
 
-        full_prompt = f"{persona_intro.strip()}\n\nUser: {user_input}\nNullCypher:"
-        
+        full_prompt = f"{base_prompt.strip()}\n\nUser: {user_input}\nNullCypher:"
         try:
             response = llm.invoke(full_prompt)
             print(f"\n🤖 NullCypher: {response.strip()}")
@@ -38,6 +43,7 @@ def run_nullcypher_chat():
             print("⚠️  Error generating response:")
             print(e)
 
-# 🔓 Boot sequence
+
+# 🔓 Entry point
 if __name__ == "__main__":
     run_nullcypher_chat()
