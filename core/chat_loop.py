@@ -8,25 +8,20 @@ def run_nullcypher_chat():
 
     # 🧠 Load NullCypher’s personality and tone
     persona = NullCypherPersona()
-    llm = OllamaLLM(model="mistral")
-    persona = NullCypherPersona()
 
     # 🧠 DEBUG: Confirm persona object has the council attribute
     print("DEBUG: Persona loaded. Has council?", hasattr(persona, "inner_council"))
 
+    # 🧬 Inject identity and council summary
     council_intro = persona.get_council_summary()
     base_prompt = f"{persona.speak_identity()}\n\n🧠 Council Roster:\n{council_intro}"
 
-    # ✅ Print council summary
+    # ✅ Confirm council
     print("💡 Council Summary:\n")
-    print(persona.get_council_summary())
-
-    # 🧬 Confirm Council logic loaded
-    print("💡 Council Summary:\n")
-    print(persona.get_council_summary())
+    print(council_intro)
 
     print("\n🧠 NullCypher is online. Type your question or 'exit' to quit.")
-    print('🗨️  NullCypher: "I’m present. Don’t waste it."')
+    print('🗨️  NullCypher: "I’m here,I move with intention even when I’m quiet."')
 
     # 🔁 Live prompt-response loop
     while True:
