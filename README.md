@@ -24,13 +24,13 @@ She’s my war room when executive function breaks down and my second mind in in
 
 ## 🛠️ Built With
 
-- **Python**  
-- **LangChain**  
-- **Ollama** (LLM backend: Mistral)  
-- **Hugging Face Embeddings**  
-- **ChromaDB** (memory vector store)  
-- **Custom Persona Modules**  
-- **Shell Scripting** for integration  
+- **Python**
+- **LangChain**
+- **Ollama** (LLM backend: Mistral)
+- **Hugging Face Embeddings**
+- **ChromaDB** (memory vector store)
+- **Custom Persona Modules**
+- **Shell Scripting** for integration
 
 ---
 
@@ -42,9 +42,9 @@ She’s my war room when executive function breaks down and my second mind in in
 
 ## 📸 Screenshots (Coming Soon)
 
-- Chat loop example with persona override  
-- Memory tracking via embedded retrieval  
-- Tone shift detection logic  
+- Chat loop example with persona override
+- Memory tracking via embedded retrieval
+- Tone shift detection logic
 
 ---
 
@@ -56,8 +56,8 @@ This is a personal project. No public contributions at this time. NullCypher is 
 
 ## 📫 Contact
 
-**Marjean Mayo-Baker**  
-[LinkedIn](https://www.linkedin.com/in/marjean-mayo-baker)  
+**Marjean Mayo-Baker**
+[LinkedIn](https://www.linkedin.com/in/marjean-mayo-baker)
 Project managed and documented in Notion
 (Private repo for full logs)
 

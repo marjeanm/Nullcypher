@@ -1,0 +1,2 @@
+[bandit]
+exclude = venv/,logs/,scripts/notion_bulk_importer.py

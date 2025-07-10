@@ -42,7 +42,7 @@ NOTION_TOKEN=secret_your_token_here
 DATABASE_ID=your_database_id_here
 ```
 
-> Note: Your token must be from a Notion integration with access to your workspace.  
+> Note: Your token must be from a Notion integration with access to your workspace.
 > Share your database with the integration manually from Notion’s **Share** menu.
 
 ---

@@ -32,8 +32,16 @@ splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 chunks = splitter.split_text(full_memory)
 
 # Embed & persist
-embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vectorstore = Chroma.from_texts(chunks, embedding_model, persist_directory=str(project_root / "nullcypher_memory_store"))
+embedding_model = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+vectorstore = Chroma.from_texts(
+    chunks,
+    embedding_model,
+    persist_directory=str(project_root / "nullcypher_memory_store"),
+)
 vectorstore.persist()
 
-print(f"✅ Memory embedded: {len(chunks)} chunks stored from {len(memory_files)} memory files.")
+print(
+    f"✅ Memory embedded: {len(chunks)} chunks stored from {len(memory_files)} memory files."
+)

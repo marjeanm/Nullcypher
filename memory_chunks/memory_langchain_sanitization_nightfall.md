@@ -2,7 +2,7 @@
 
 **Source:** [link [source]]( https://help.nightfall.ai/nightfall-firewall-for-ai/tutorials)
 
-genai-protection/langchain-prompt-sanitization-tutorial  
+genai-protection/langchain-prompt-sanitization-tutorial
 
 **Tags:** langchain, genai_security, prompt_injection, input_sanitization, nightfall_ai
 
@@ -14,7 +14,7 @@ LangChain applications are vulnerable to prompt injection attacks, especially wh
 
 - Use allowlists, blocklists, or regex filters to
 
-screen inputs  
+screen inputs
 
 - Sanitize prompts dynamically to reduce injection
 
@@ -22,7 +22,7 @@ vectors
 
 - Combine semantic scanning with business context
 
-filters for stronger protection  
+filters for stronger protection
 
 - LangChain’s flexibility means you must build your
 
