@@ -1,6 +1,8 @@
 from typing import Dict
 from core.council import get_inner_council, get_auxiliary_voices
 
+"""Core persona blueprint including tone, behavior, identity, and ritual logic."""
+
 
 class NullCypherPersona:
     def __init__(self):

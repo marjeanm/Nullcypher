@@ -1,0 +1,29 @@
+# 🚀 NullCypher v0.9.0 – Beta Release
+
+**Date:** 2025-07-10
+**Branch:** `dev`
+**Status:** Presentation-ready (backend only)
+
+---
+
+## ✅ Highlights
+
+- ✅ Persona logic finalized
+- ✅ Council behavior modules live: Rogue, Daria, Spectrum
+- ✅ Mistral LLM integration stable via Ollama
+- ✅ Git structure flattened and fully synced
+- ✅ Footer log system working and committed
+- ✅ Test logs confirm emotional regulation + loop flow
+- ✅ Pre-commit, Bandit, Black enforced
+
+---
+
+## 🧪 Known Gaps
+
+- ❌ No frontend / UI shell
+- ❌ Memory not hot-loaded or vectorized
+- ❌ No plugin/hook system yet
+
+---
+
+## 🛠 Next Target: `v1.0` Public Presentation + Frontend
