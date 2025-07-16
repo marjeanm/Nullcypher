@@ -1,16 +1,35 @@
-# 🧠 Vector memory store (ChromaDB)
-nullcypher_memory_store/
-*.sqlite
-*.bin
-
-# 🔁 Python artifacts
+# === PYTHON BACKEND ===
 __pycache__/
 *.pyc
-
-# 🛠 VSCode settings
-.vscode/
-
-# 🧪 Environments
-venv/
+*.pyo
+*.pyd
+*.db
 .env
-nullcypher-genai-cyber-assistant/
+.venv/
+venv/
+env/
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# === LOGS + TEMP FILES ===
+*.log
+logs/
+*.bak
+*.tmp
+
+# === FRONTEND NODE MODULES ===
+# If using frontend/ subdirectory
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+frontend/.DS_Store
+
+# Or if working from root
+node_modules/
+.vite/
+dist/
+
+# === OS-LEVEL JUNK ===
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+{
+  "name": "nullcypher-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwinds": "^0.0.0"
+  }
+}
