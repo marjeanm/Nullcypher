@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NullCypher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-black text-gray-200 font-mono">
+    <div id="app" class="grid grid-cols-3 gap-4 h-screen p-4">
+      <!-- Memory Feed -->
+      <section
+        id="memory-feed"
+        class="h-full bg-zinc-900 p-4 rounded-2xl shadow-md overflow-y-auto"
+      >
+        <h2 class="text-xl font-semibold mb-2">🧠 Memory Feed</h2>
+      </section>
+
+      <!-- Terminal -->
+      <section
+        id="terminal"
+        class="h-full bg-zinc-800 p-4 rounded-2xl shadow-md flex flex-col justify-between"
+      >
+        <div id="terminal-output" class="flex-grow overflow-y-auto mb-4"></div>
+        <div class="flex">
+          <input
+            id="user-input"
+            type="text"
+            class="w-full bg-zinc-700 p-2 rounded-l-md"
+            placeholder="Type..."
+          />
+          <button
+            id="send-btn"
+            class="bg-purple-600 hover:bg-purple-700 p-2 rounded-r-md"
+          >
+            Send
+          </button>
+        </div>
+      </section>
+
+      <!-- Council Panel -->
+      <section
+        id="council-view"
+        class="h-full bg-zinc-900 p-4 rounded-2xl shadow-md overflow-y-auto"
+      >
+        <h2 class="text-xl font-semibold mb-2">🧭 Council View</h2>
+        <div id="council-panel"></div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
