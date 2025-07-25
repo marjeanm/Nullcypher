@@ -4,7 +4,7 @@ import autoprefixer from 'autoprefixer';
 
 export default {
   plugins: [
-    tailwindcss(),
+    tailwindcss(),  // ✅ NEW plugin for Tailwind 4+
     autoprefixer(),
   ],
 };

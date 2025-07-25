@@ -1,2 +1,7 @@
 
 @tailwind utilities;
+
+/* Optional: custom NullCypher tweaks */
+body {
+  font-family: 'Fira Code', monospace;
+}
